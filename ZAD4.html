@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wprowadzenie do internetu">
+    <meta name="author" content="Oskar Gustaw">
+    <title>Wprowadzenie do internetu zad2</title>
+</head>
+<body>
+<body style="background-color: rgb(227, 255, 127)">
+<table bgcolor = "green" align = "center" width="1000">
+<tr>
+    <td width="600"><h1>Oldtimer Club</h1></td>
+    <td width="400"><img src="oldtimer.jpg" width="300" height="150"></td>
+</tr>    
+</table>
+<table bgcolor ="yellow" align ="center" width = "1000">
+    <tr>
+        <td bgcolor="green" width="120" height="500">
+            <table>
+                <tr></tr> 
+                <td bgcolor=yellow align ="center" width="115" height="40"><b><u>Główna</u></b></td>
+                <tr></tr>
+                <td bgcolor=yellow align ="center" width="115" height="40"><b><u>Giełda</u></b></td>
+                <tr></tr>
+                <td width="115" height="400"></td>
+                <tr></tr>
+                <td bgcolor=yellow align ="center" width="115" height="40"><b><u>Kontakt</u></b></td>
+            </table>
+        </td>
+        <td>
+            <table height="400">
+                <form action="http://info.wsisiz.edu.pl/~zawadzkp/skrypt.php"method="post">
+                    <tr align = "center">
+                        <td width=130></td>
+                        <td colspan="2" bgcolor=green align=center width=700><h1>Formularz dodawania ogłoszenia</h1></td>
+                        <td width=130></td>
+                    </tr>
+                    <tr>
+                        <td width=130></td>
+                        <td bgcolor=green align=right> Marka </td>
+                        <td bgcolor=green> <input type="text" name="Producent" required></td>
+                        <td width=130></td>
+                    </tr>
+                    <tr>
+                        <td width=130></td>
+                        <td bgcolor=green align=right> Model </td>
+                        <td bgcolor=green><input type="text" name="Model" required></td>
+                        <td width=130></td>
+                    </tr>
+                    <tr>
+                        <td width=130></td>
+                        <td align=right bgcolor=green> Rok </td>
+                        <td bgcolor=green><input type="number" name="Year" required /></td>
+                        <td width=130></td>
+                    </tr>
+                    <tr>
+                        <td width=130></td>
+                        <td bgcolor=green align=right> Rodzaj silnika</td>
+                        <td bgcolor=green>
+                            <input type="radio" name="paliwo" value="b" /> Benzyna 
+                            <input type="radio" name="paliwo" value="d" /> Diesel
+                        </td>
+                        <td width=130></td>
+                    </tr>
+                    <tr>
+                        <td width=130></td>
+                        <td align=right bgcolor=green> Wyposażenie samochodu: </td>
+                        <td bgcolor=green>
+                            <input type="checkbox" name="wyposażenie[]" value="Klimatyzacja" /> Klimatyzacja </br>
+                            <input type="checkbox" name="wyposażenie[]" value="ABS" /> ABS </br>
+                            <input type="checkbox" name="wyposażenie[]" value="wspomaganie" /> Wspomaganie Kierownicy </br>
+                        </td>
+                        <td width=130></td>
+                    </tr>
+                    <tr>
+                        <td width=130></td>
+                        <td align=right bgcolor=green> Stan: </td>
+                        <td bgcolor=green>
+                            <select name="stan">
+                                <option value="zły"> Zły </option>
+                                <option value="średni"> Średni </option>
+                                <option value="dobry"> Dobry </option>
+                                <option value="bardzo dobry"> Bardzo Dobry </option>
+                                <option value="Idealny"> Idealny </option>
+                            </select>
+                        </td>
+                        <td width=130></td>
+                    </tr>
+                    <tr>
+                        <td width=130></td>
+                        <td id="center" colspan="2" target="_blank" >
+                            <input type="submit" name="Wyślij" value="Wyślij" target="_blank"/>
+                            <input type="reset" name="Wyczyść" value="Wyczyść" />
+                        </td>
+                        <td width=130></td>
+                    </tr>    
+                </form>
+            </table>
+        </td>
